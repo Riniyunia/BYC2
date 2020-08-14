@@ -12,10 +12,6 @@ class MealList extends HTMLElement {
         this.render();
     }
 
-    connectedCallback() {
-        this.render();
-    }
-
     render() {
         this.shadowDOM.innerHTML = "";
         this._meals.forEach(meal => {
